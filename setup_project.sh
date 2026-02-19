@@ -91,25 +91,6 @@ cat <<EOF > "attendance_tracker_$input/Helpers/config.json"
     "total_sessions": 15
 }
 EOF
-# content for assets.csv
-cat <<EOF > "attendance_tracker_$input/Helpers/assets.csv"
-Email,Names,Attendance Count,Absence Count
-alice@example.com,Alice Johnson,14,1
-bob@example.com,Bob Smith,7,8
-charlie@example.com,Charlie Davis,4,11
-diana@example.com,Diana Prince,15,0
-EOF
-# content for config.json
-cat <<EOF > "attendance_tracker_$input/Helpers/config.json"
-{
-    "thresholds": {
-        "warning": 75,
-        "failure": 50
-    },
-    "run_mode": "live",
-    "total_sessions": 15
-}
-EOF
 # content for reports.log
 cat <<EOF > "attendance_tracker_$input/reports/reports.log"
 --- Attendance Report Run: 2026-02-06 18:10:01.468726 ---
